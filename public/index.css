@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  --background: #36393a;
+  --primary: #dff1f4;
+  --secondary: orange;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+#root {
+  margin: 30px auto;
+  width: 600px;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 214, 137);
+  text-decoration-line: underline;
+}
+
+nav > a {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-right: 30.5px;
+  text-decoration-line: none;
+}
+
+nav > a.active {
+  text-decoration-line: underline;
+}
+
+nav {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #979797;
+  margin: 20px auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #979797;
+  margin: 20px 0;
+}
+
+button[type="submit"] {
+  background-color: var(--secondary);
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  min-width: 100px;
+  width: 20%;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(255, 214, 137);
+}
+
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+  background: var(--primary);
+  color: var(--background);
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 7px 9.5px 9px 9.5px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.tile {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.tile.tile-title {
+  font-weight: bold;
+}
+
+.tile-container {
+  border-radius: 8px;
+
+  background-color: #262627;
+  padding: 20px;
+  width: 40%;
+}
+
+.tile-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#copyright {
+  font-size: 0.9rem;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 175px;
+}
