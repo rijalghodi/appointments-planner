@@ -21,7 +21,7 @@ export const AppointmentsPage = (props) => {
     if (!isEmpty) {
       addAppointment(title, contact, date, time);
       setTitle("");
-      setContact("");
+      // setContact("");
       setDate("");
       setTime("");
       setIsEmpty(true);

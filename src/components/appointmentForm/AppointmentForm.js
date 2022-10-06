@@ -6,7 +6,11 @@ export const AppointmentForm = ({ contacts, title, setTitle, contact, setContact
     const [month, day, year] = new Date().toLocaleDateString("en-US").split("/");
     return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
   };
-  const onChange = (e) => setContact(e.target.value);
+  const onChange = (e) => {
+    console.log(e.target.value);
+    setContact(e.target.value);
+  };
+
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="title-input">Title</label>
@@ -20,7 +24,7 @@ export const AppointmentForm = ({ contacts, title, setTitle, contact, setContact
           <label htmlFor="time-input">Time</label>
           <input id="time-input" type="time" name="time" value={time} onChange={(e) => setTime(e.target.value)} />
         </div>
-        <ContactPicker contacts={contacts} onChange={onChange} />
+        <ContactPicker contact={contact} contacts={contacts} onChange={onChange} />
       </div>
       <button id="submit" type="submit">
         Add

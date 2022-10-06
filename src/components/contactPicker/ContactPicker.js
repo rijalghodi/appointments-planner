@@ -1,7 +1,7 @@
 import React from "react";
 
 export const ContactPicker = (props) => {
-  const { contacts, onChange } = props;
+  const { contact, contacts, onChange } = props;
   return (
     <div className="form-section">
       <label htmlFor="#select-contact">Contact</label>
