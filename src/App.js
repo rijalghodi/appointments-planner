@@ -44,7 +44,7 @@ function App() {
 
   const addAppointment = (title, contact, date, time) => {
     const newAppointment = {
-      id: new Date().getTime(),
+      id: new Date().getTime().toString(),
       title: title,
       contact: contact,
       date: date,
