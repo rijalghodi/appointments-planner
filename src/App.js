@@ -38,7 +38,7 @@ function App() {
   };
 
   const deleteContact = (id) => {
-    const remainContacts = contacts.filter((item) => item.id != id);
+    const remainContacts = contacts.filter((item) => item.id !== id);
     setContacts(remainContacts);
   };
 
@@ -54,7 +54,7 @@ function App() {
   };
 
   const deleteAppointment = (id) => {
-    const remainAppointments = appointments.filter((item) => item.id != id);
+    const remainAppointments = appointments.filter((item) => item.id !== id);
     setAppointments(remainAppointments);
   };
 
