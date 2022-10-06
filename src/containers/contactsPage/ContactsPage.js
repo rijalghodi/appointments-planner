@@ -40,12 +40,12 @@ export const ContactsPage = (props) => {
       return 0;
     }
     for (const contact of contacts) {
-      if (contact.name == name) {
+      if (contact.name === name) {
         setIsDuplicated(true);
         break;
       }
     }
-  });
+  }, [name, phone, email, contacts]);
 
   return (
     <div>

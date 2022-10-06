@@ -29,7 +29,7 @@ function App() {
   */
   const addContact = (name, phone, email) => {
     const newContact = {
-      id: new Date().getTime(),
+      id: new Date().getTime().toString(),
       name: name,
       phone: phone,
       email: email,

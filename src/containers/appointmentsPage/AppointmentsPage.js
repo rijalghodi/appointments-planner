@@ -37,7 +37,7 @@ export const AppointmentsPage = (props) => {
     if (title && contact && date && time) {
       setIsEmpty(false);
     }
-  });
+  }, [title, contact, date, time]);
 
   return (
     <div>
