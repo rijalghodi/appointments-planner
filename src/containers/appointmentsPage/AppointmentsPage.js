@@ -14,11 +14,11 @@ export const AppointmentsPage = (props) => {
   const { appointments, addAppointment, deleteAppointment, contacts } = props;
 
   const handleSubmit = (e) => {
-    if (!isEmpty) {
-      e.preventDefault();
-      /*
+    e.preventDefault();
+    /*
       Add appointment info and clear data  
       */
+    if (!isEmpty) {
       addAppointment(title, contact, date, time);
       setTitle("");
       setContact("");
@@ -34,6 +34,7 @@ export const AppointmentsPage = (props) => {
   */
 
   useEffect(() => {
+    setIsEmpty(true);
     if (title && contact && date && time) {
       setIsEmpty(false);
     }

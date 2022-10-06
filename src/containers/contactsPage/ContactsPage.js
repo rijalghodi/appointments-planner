@@ -35,9 +35,10 @@ export const ContactsPage = (props) => {
   */
 
   useEffect(() => {
+    setIsDuplicated(false);
+    setIsEmpty(true);
     if (name && phone && email) {
       setIsEmpty(false);
-      return 0;
     }
     for (const contact of contacts) {
       if (contact.name === name) {
