@@ -10,8 +10,7 @@ By this web app, users can easily organize contacts and create appointments
 
 Run `npm start` in the project root and the app will be available on port 3000.
 
-Or simply click <a href="https://rijalghodi-appointments-planner.netlify.app" target="_blank">this link</a>
-[this link](https://rijalghodi-appointments-planner.netlify.app) to see the project deployment.
+Or simply click <a href="https://rijalghodi-appointments-planner.netlify.app" target="_blank">this link</a> to see the project deployment.
 
 ## To Test
 
